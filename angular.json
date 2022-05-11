@@ -118,8 +118,6 @@
   },
   "defaultProject": "ng-study",
   "cli": {
-    "warnings": {
-      "typescriptMismatch": false
-    }
+    "warnings": {}
   }
 }

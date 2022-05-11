@@ -6,6 +6,9 @@
     "tslint-plugin-prettier"
   ],
   "rules": {
+    "deprecation": {
+      "severity": "warning"
+    },
     "no-floating-promises": false,
     "prettier": true,
     "strict-type-predicates": false
