@@ -11,11 +11,13 @@ import { RouterModule } from '@angular/router'
       },
       {
         path: 'console',
-        loadChildren: './console/console.module#ConsoleModule',
+        loadChildren: () =>
+          import('./console/console.module').then(m => m.ConsoleModule),
       },
       {
         path: 'landing',
-        loadChildren: './landing/landing.module#LandingModule',
+        loadChildren: () =>
+          import('./landing/landing.module').then(m => m.LandingModule),
       },
       {
         path: '**',
