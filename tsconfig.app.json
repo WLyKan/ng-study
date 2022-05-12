@@ -1,11 +1,11 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app"
   },
   "angularCompilerOptions": {
     "disableTypeScriptVersionCheck": true
   },
-  "files": ["main.ts", "polyfills.ts"],
+  "files": ["src/main.ts", "src/polyfills.ts"],
   "include": ["src/**/*.d.ts"]
 }
