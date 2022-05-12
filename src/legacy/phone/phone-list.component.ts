@@ -1,5 +1,5 @@
+import angular from 'angular'
 import { PhoneService } from 'app/core/services/phone.service'
-
 // import template from './phone-list.component.html'
 
 angular.module('app').component('phoneList', {

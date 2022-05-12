@@ -1,6 +1,6 @@
 import { Router } from '@angular/router'
 import { StateProvider, UrlService } from '@uirouter/angularjs'
-
+import angular from 'angular'
 import './phone/phone-list.component'
 
 angular.module('app').config([
@@ -14,7 +14,7 @@ angular.module('app').config([
     $urlServiceProvider: UrlService,
     ngRouterProvider: {
       $get: () => Router
-    },
+    }
   ) => {
     $stateProvider.state({
       name: 'phones',
@@ -26,9 +26,7 @@ angular.module('app').config([
     const ngRoutes = ngRouter.config.map(({ path }) => path)
 
     $urlServiceProvider.rules.otherwise(() => {
-      const canBeHandled = ngRoutes.includes(
-        $urlServiceProvider.path().split('/')[1],
-      )
+      const canBeHandled = ngRoutes.includes($urlServiceProvider.path().split('/')[1])
       setTimeout(() => {
         ngRouter.navigateByUrl(canBeHandled && $urlServiceProvider.url(), {
           replaceUrl: !canBeHandled,
