@@ -14,11 +14,6 @@
   "lint-staged": {
     "src/**/*.{ts,js,css,md,less,html,json}": "prettier --write"
   },
-  "prettier": {
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "all"
-  },
   "dependencies": {
     "@angular/animations": "^13.3.6",
     "@angular/common": "^13.3.6",
@@ -32,6 +27,7 @@
     "@uirouter/angularjs": "^1.0.20",
     "angular": "^1.7.5",
     "core-js": "^2.6.5",
+    "eslint-plugin-prettier": "^4.0.0",
     "rxjs": "^6.5.2",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"
